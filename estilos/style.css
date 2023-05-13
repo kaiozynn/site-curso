@@ -131,6 +131,8 @@ main {
 .akats {
   background-image: url(../imagens/wallpaper.jpg);
   padding-top: 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 .t2 {
