@@ -124,3 +124,12 @@ main {
   height: 400px;
   width: 100vw;
 }
+
+.akats {
+  background-image: url(/imagens/wallpaper.jpg);
+  padding-top: 10px;
+}
+
+.t2 {
+  background-color: rgba(0, 0, 0, 0.605);
+}
