@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Bem-vindo ao CursoDns</title>
-    <style>
-        #Close {
-            margin-top: 10px;
-            margin-right: 5px;
-            font-size: 24px;
-        }
-    </style>
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Bem-vindo ao CursoDns</title>
+  <style>
+    #Close {
+      margin-top: 10px;
+      margin-right: 5px;
+      font-size: 24px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <span class="logo"><img src="imagens/logo.jpg" alt="logo-tipo"></span>
-            <div class="container">
-                <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="material-icons">menu</i>
-                </button>
-            </div>
-        </nav>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close" id="Close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
+  <header>
+    <nav>
+      <span class="logo"><img src="imagens/logo.jpg" alt="logo-tipo"></span>
+      <div class="container">
+        <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="material-icons">menu</i>
+        </button>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" id="Close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
 
-            </div>
-        </div>
-    </header>
-    <main>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="texto">
+      <h1>Bem Vindo!</h1>
+      <p>
+        Fala galerinha, sejam bem vindos ao nosso curso de desenhos o <span class="destaque">CursoDns</span>, aqui vc aprendera do básico ao avançado, podendo criar até mesmo seus próprios desenhos. Olhe abaixo alguns dos desenhos dos nossos alunos.</p>
+    </div>
+    <div id="carrossel">
+      <div id="navigation">
+        <input type="radio" name="img" id="img1">
+        <input type="radio" name="img" id="img2">
+        <input type="radio" name="img" id="img3">
+        <input type="radio" name="img" id="img4">
+      </div>
+      <div class="conte" id="img">
         <div>
-            Ola mundo
+          <img src="imagens/law-aprendiz.jpeg" alt="law-aprendiz">
         </div>
-    </main>
+        <div>
+          <img class="obj" src="imagens/broky-aprendiz.jpeg" alt="broky-aprendiz">
+        </div>
+        <div>
+          <img class="obj" src="imagens/franky-aprendiz.jpeg" alt="franky-aprendiz">
+        </div>
+        <div>
+          <img class="obj" src="imagens/ussop-aprendiz.jpeg" alt="ussop-aprendiz">
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(/imagens/wallpaper.jpg); padding-top: 10px;">
+      <div class="texto" style="background-color: rgba(0, 0, 0, 0.605);">
+        <p>Como você pode perceber, temos um curso focado em desenhos de anime, mas aqui você aprenderá de tudo de anime à caricatura, então não pense que esse curso é só para fãns de animes, se você gosta de desenhar esse curso é para você.</p>
+      </div>
+    </div>
+  </main>
 </body>
 <script src="cursoDns.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
