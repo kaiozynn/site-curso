@@ -12,18 +12,22 @@
   <title>Bem-vindo ao CursoDns</title>
   <style>
     #Close {
+      position: absolute;
       margin-top: 10px;
       margin-right: 5px;
       font-size: 24px;
+      right: 0;
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <span class="logo"><img src="imagens/logo.jpg" alt="logo-tipo"></span>
+      <div class="logo">
+        <span>CursoDns</span>
+      </div>
       <div class="container">
-        <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="btn-primary but" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <i class="material-icons">menu</i>
         </button>
       </div>
@@ -33,7 +37,9 @@
         <button type="button" class="btn-close" id="Close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-
+        <!--
+          aqui vai o codigo da barra lateral
+        -->
       </div>
     </div>
   </header>
@@ -43,25 +49,50 @@
       <p>
         Fala galerinha, sejam bem vindos ao nosso curso de desenhos o <span class="destaque">CursoDns</span>, aqui vc aprendera do básico ao avançado, podendo criar até mesmo seus próprios desenhos. Olhe abaixo alguns dos desenhos dos nossos alunos.</p>
     </div>
-    <div id="carrossel">
-      <div class="conte" id="img">
-        <div>
-          <img src="imagens/law-aprendiz.jpeg" alt="law-aprendiz">
-        </div>
-        <div>
-          <img class="obj" src="imagens/broky-aprendiz.jpeg" alt="broky-aprendiz">
-        </div>
-        <div>
-          <img class="obj" src="imagens/franky-aprendiz.jpeg" alt="franky-aprendiz">
-        </div>
-        <div>
-          <img class="obj" src="imagens/ussop-aprendiz.jpeg" alt="ussop-aprendiz">
-        </div>
+    <div>
+      <div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/broky-aprendiz.jpeg" class="d-block w-100" alt="Broky">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/franky-aprendiz.jpeg" class="d-block w-100" alt="Franky">
+            </div>
+            <div class="carousel-item law">
+              <img src="imagens/law-aprendiz.jpeg" class="d-block w-100" alt="Law">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/ussop-aprendiz.jpeg" class="d-block w-100" alt="Usoop">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
-    </div>
+      </div>
     <div class="akats">
       <div class="texto t2">
         <p>Como você pode perceber, temos um curso focado em desenhos de anime, mas aqui você aprenderá de tudo, de anime à caricatura, então não pense que esse curso é só para fãns de animes, se você gosta de desenhar esse curso é para você.</p>
+        <div class="links" style="background-color: transparent;">
+          <button>
+            <span>
+              <img src="imagens/logo-discord.webp" alt="logo-discord">
+            </span>
+            <a href="#">Discord</a>
+          </button>
+          <button>
+            <span>
+              <img src="imagens/logo-whatsapp.webp" alt="logo-whatsapp">
+            </span>
+            <a href="#">Whatsapp</a>
+          </button>
+        </div>
       </div>
     </div>
   </main>

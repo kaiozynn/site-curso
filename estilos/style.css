@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +31,7 @@ nav {
   right: 10px;
 }
 
-button {
+.but {
   position: absolute;
   right: 0;
   background-color: transparent;
@@ -44,8 +46,19 @@ button {
   font-size: 40px;
 }
 
-.logo > img {
-  height: 30vh;
+.logo {
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: Righteous;
+  font-size: 2em;
+  padding-bottom: 100px;
+}
+
+.logo > span > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #menu {
@@ -100,32 +113,15 @@ main {
   font-weight: bold;
 }
 
-#carrossel {
-  display: flex;
-  overflow: hidden;
+.carousel-item > img {
+  width: 200px;
   height: 400px;
-  width: 100vw;
-  background-color: transparent;
-}
-
-#navigation {
-  display: none;
-}
-
-.conte {
-  display: flex;
-  transition: transform 1s ease-in-out;
-  transform: translate(0);
-}
-
-.obj {
+  object-fit: cover;
   object-position: top center;
 }
 
-.conte > div > img {
-  object-fit: cover;
-  height: 400px;
-  width: 100vw;
+.law > img {
+  object-position: center center;
 }
 
 .akats {
@@ -137,4 +133,50 @@ main {
 
 .t2 {
   background-color: rgba(0, 0, 0, 0.605);
+}
+
+.links {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #222127;
+}
+
+.links button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  padding-right: 10px;
+  width: 160px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.links button:nth-child(1) {
+  background-color: #5765EC;
+}
+
+.links button:nth-child(2) {
+  background-color: #32D951;
+}
+
+.links span {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.links span > img {
+  width: 100%;
+  height: 100%;
+}
+
+.links button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
 }
