@@ -85,6 +85,16 @@ main {
   width: 100vw;
 }
 
+.gif-g {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-g > img {
+  width: 220px;
+  margin-left: -60px;
+}
+
 .texto {
   padding: 0 15px;
   text-indent: 15px;
@@ -97,15 +107,13 @@ main {
 }
 
 .texto h1 {
+  display: flex;
+  align-items: center;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 0 0 10px 0;
-}
-
-.texto h1::after {
-  content: url(../imagens/favicon-32x32.png);
-  display: inline;
-  position: absolute;
+  margin-top: 40px;
+  margin-left: -17.1px;
 }
 
 .texto .destaque {
