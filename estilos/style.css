@@ -48,11 +48,9 @@ nav {
 
 .logo {
   width: 200px;
-  height: 50px;
   color: white;
   font-family: Righteous;
   font-size: 2em;
-  padding-bottom: 100px;
 }
 
 .logo > span > img {
