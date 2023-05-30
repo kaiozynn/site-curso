@@ -111,8 +111,9 @@ main {
   font-size: 1.8em;
   padding: 0 0 10px 0;
   margin-top: 50px;
-  margin-left: -10px;
-  color: white;
+  margin-left: -17px;
+  color: transparent;
+  animation: textWave 2s ease-in-out infinite;
 }
 
 .texto h1 span {
@@ -120,47 +121,6 @@ main {
   margin: -7px;
   padding: 0;
   text-align: left;
-}
-
-.texto h1 span:nth-child(1) {
-  animation: textWave 2.6s ease-in-out .2s infinite;
-}
-
-.texto h1 span:nth-child(2) {
-  animation: textWave 2.6s ease-in-out .6s infinite;
-}
-
-.texto h1 span:nth-child(3) {
-  animation: textWave 2.6s ease-in-out 1s infinite;
-}
-
-.texto h1 span:nth-child(4) {
-  animation: textWave 2.6s ease-in-out 1.4s infinite;
-}
-
-.texto h1 span:nth-child(5) {
-  animation: textWave 2.6s ease-in-out 1.8s infinite;
-}
-
-.texto h1 span:nth-child(6) {
-  animation: textWave 2.6s ease-in-out 2.2s infinite;
-}
-
-.texto h1 span:nth-child(7) {
-  animation: textWave 2.6s ease-in-out 2.6s infinite;
-}
-
-.texto h1 span:nth-child(8) {
-  animation: textWave 2.6s ease-in-out 3s infinite;
-}
-
-.texto h1 span:nth-child(9) {
-  animation: textWave 2.6s ease-in-out 3.4s infinite;
-}
-
-.texto h1 span:nth-child(3)::after {
-  content: '';
-  margin: 3px;
 }
 
 .texto .destaque {
@@ -237,13 +197,14 @@ main {
 }
 
 @keyframes textWave {
-  30% {
-    color: rgba(255, 255, 255);
-  }
-  50%, 90% {
+  60% {
     text-shadow: 0px 0px 2px #73bdee,
     0px 0px 10px #73bdee,
-    0px 0px 20px #73bdee,
-    0px 0px 40px #73bdee;
-  } 
+    0px 0px 20px #73bdee;
+    color: rgba(255, 255, 255);
+  }
+  75% {
+    text-shadow: none;
+    color: transparent;
+  }
 }
