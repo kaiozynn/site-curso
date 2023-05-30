@@ -110,7 +110,7 @@ main {
   text-align: center;
   font-size: 1.8em;
   padding: 0 0 10px 0;
-  margin-top: 42px;
+  margin-top: 50px;
   margin-left: -10px;
   color: transparent;
 }
@@ -123,75 +123,39 @@ main {
 }
 
 .texto h1 span:nth-child(1) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: .2s;
+  animation: textWave 2.6s ease-in-out .2s infinite;
 }
 
 .texto h1 span:nth-child(2) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: .6s;
+  animation: textWave 2.6s ease-in-out .6s infinite;
 }
 
 .texto h1 span:nth-child(3) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
+  animation: textWave 2.6s ease-in-out 1s infinite;
 }
 
 .texto h1 span:nth-child(4) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 1.4s;
+  animation: textWave 2.6s ease-in-out 1.4s infinite;
 }
 
 .texto h1 span:nth-child(5) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 1.8s;
+  animation: textWave 2.6s ease-in-out 1.8s infinite;
 }
 
 .texto h1 span:nth-child(6) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 2.2s;
+  animation: textWave 2.6s ease-in-out 2.2s infinite;
 }
 
 .texto h1 span:nth-child(7) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 2.6s;
+  animation: textWave 2.6s ease-in-out 2.6s infinite;
 }
 
 .texto h1 span:nth-child(8) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 3s;
+  animation: textWave 2.6s ease-in-out 3s infinite;
 }
 
 .texto h1 span:nth-child(9) {
-  animation-name: textWave;
-  animation-duration: 2.6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 3.4s;
+  animation: textWave 2.6s ease-in-out 3.4s infinite;
 }
 
 .texto h1 span:nth-child(3)::after {
