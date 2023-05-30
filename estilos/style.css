@@ -112,7 +112,7 @@ main {
   padding: 0 0 10px 0;
   margin-top: 50px;
   margin-left: -10px;
-  color: transparent;
+  color: white;
 }
 
 .texto h1 span {
@@ -237,12 +237,13 @@ main {
 }
 
 @keyframes textWave {
-  10% {
+  30% {
     color: rgba(255, 255, 255);
   }
   50%, 90% {
     text-shadow: 0px 0px 2px #73bdee,
     0px 0px 10px #73bdee,
-    0px 0px 20px #73bdee;
+    0px 0px 20px #73bdee,
+    0px 0px 40px #73bdee;
   } 
 }
