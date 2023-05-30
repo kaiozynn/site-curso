@@ -110,8 +110,9 @@ main {
   text-align: center;
   font-size: 1.8em;
   padding: 0 0 10px 0;
-  margin-top: 41px;
+  margin-top: 42px;
   margin-left: -10px;
+  color: transparent;
 }
 
 .texto h1 span {
@@ -119,6 +120,78 @@ main {
   margin: -7px;
   padding: 0;
   text-align: left;
+}
+
+.texto h1 span:nth-child(1) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: .2s;
+}
+
+.texto h1 span:nth-child(2) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: .6s;
+}
+
+.texto h1 span:nth-child(3) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.texto h1 span:nth-child(4) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1.4s;
+}
+
+.texto h1 span:nth-child(5) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1.8s;
+}
+
+.texto h1 span:nth-child(6) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2.2s;
+}
+
+.texto h1 span:nth-child(7) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2.6s;
+}
+
+.texto h1 span:nth-child(8) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+.texto h1 span:nth-child(9) {
+  animation-name: textWave;
+  animation-duration: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 3.4s;
 }
 
 .texto h1 span:nth-child(3)::after {
@@ -197,4 +270,14 @@ main {
   color: white;
   font-size: 1.1em;
   font-weight: 600;
+}
+
+@keyframes textWave {
+  10% {
+    color: rgba(255, 255, 255);
+  }
+  50%, 90% {
+    text-shadow: 0px 0px 20px #73bdee,
+    0px 0px 50px #73bdee;
+  } 
 }
