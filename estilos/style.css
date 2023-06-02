@@ -2,27 +2,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/*-----------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*-----------------------------------------------*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   width: 100vw;
 }
-
+/*-------------------Barra onde está o menu----------------------------*/
 nav {
   display: flex;
   align-items: center;
   padding: 10px 5px 0px 5px;
   background-color: #222127;
 }
-
+/*-------------------Menu lateral----------------------------*/
 #offcanvasRight {
-  width: 50vw;
+  width: 70vw;
+  height: 99.9vh;
+  background-color: rgb(199, 199, 199);
+}
+
+.offcanvas-body button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: auto;
+}
+
+.offcanvas-body button a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cad {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+}
+
+.offcanvas-body button a.das {
+  color: white;
+  background-color: red;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.log::after {
+  content: ' |';
 }
 
 .container {
@@ -45,7 +80,7 @@ nav {
 .material-icons {
   font-size: 40px;
 }
-
+/*-------------------Logo do curso----------------------------*/
 .logo {
   width: 200px;
   color: white;
@@ -58,7 +93,7 @@ nav {
   height: 100%;
   object-fit: contain;
 }
-
+/*--------------------Menu---------------------------*/
 #menu {
   background-color: rgb(255, 117, 117);
   display: flex;
@@ -73,7 +108,7 @@ nav {
 #menu > ul {
   list-style-type: none;
 }
-
+/*---------------------Div principal--------------------------*/
 main {
   background-color: #222127;
   color: white;
@@ -82,18 +117,18 @@ main {
   height: 100vh;
   width: 100vw;
 }
-
+/*-------------------------Local dos gifs----------------------*/
 .gif-g {
   display: flex;
   justify-content: center;
 }
-
+/*--------------------------Gif da esquerda---------------------*/
 #imgEsq {
   width: 90px;
   object-fit: contain;
   margin-left: -20px;
 }
-
+/*--------------------------Gif da direita---------------------*/
 #imgDir {
   width: 110px;
   object-fit: contain;
@@ -101,7 +136,7 @@ main {
   margin-top: 5px;
   margin-right: -50px;
 }
-
+/*--------------------------Conteúdo---------------------*/
 .texto {
   padding: 0 15px;
   text-indent: 15px;
@@ -136,7 +171,7 @@ main {
   color: aliceblue;
   font-weight: bold;
 }
-
+/*-------------------Carrossel automático----------------------------*/
 .carousel-item > img {
   width: 200px;
   height: 400px;
@@ -147,7 +182,7 @@ main {
 .law > img {
   object-position: center center;
 }
-
+/*--------------------Imagem de fundo---------------------------*/
 .akats {
   background-image: url(../imagens/wallpaper.jpg);
   padding-top: 10px;
@@ -158,53 +193,148 @@ main {
 .t2 {
   background-color: rgba(0, 0, 0, 0.605);
 }
-
-.links {
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  background-color: #222127;
+/*-------------------Local de compra do curso--------------------------*/
+article {
+  background-color: black;
+  padding-top: 10px;
 }
 
-.links button {
-  display: flex;
-  border: none;
-  background-color: transparent;
-  align-items: center;
-  padding-right: 10px;
-  width: 160px;
-  height: 50px;
-  justify-content: center;
+article button {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.3em;
   border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-.links button:nth-child(1) {
-  background-color: #5765EC;
-}
-
-.links button:nth-child(2) {
-  background-color: #32D951;
-}
-
-.links span {
-  display: flex;
-  width: 50px;
-  height: 50px;
-}
-
-.links span > img {
-  width: 100%;
-  height: 100%;
-}
-
-.links button a {
+.valores button > a {
   text-decoration: none;
   color: white;
-  font-size: 1.1em;
-  font-weight: 600;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+article button span {
+  padding: 2px;
+}
+/*------------Animação da borda de compra-----------------------*/
+article button > span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, red);
+  border-radius: 10px;
+  animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+article button > span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, transparent, red);
+  animation: animar2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animar2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+article button > span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(to left, transparent, red);
+  animation: animar3 2s linear infinite;
+}
+
+@keyframes animar3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+article button > span:nth-child(4){
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to top, transparent, red);
+  animation: animar4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animar4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/*------------------Informações dos preços-----------------------------*/
+.valores {
+  width: 300px;
+  margin: auto;
+  background-color: #222127;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+.valores > span {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 3px;
+  color: white;
+}
+
+.valores span:nth-child(1) {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.valores span:nth-child(3) {
+  font-weight: bold;
+}
+/*-------------------Animação do brilho do H1 bem vindo!---------------*/
 @keyframes textWave {
 
   30% {
