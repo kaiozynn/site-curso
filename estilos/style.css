@@ -45,7 +45,7 @@ nav {
 
 .cad {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 55px;
 }
 
@@ -197,6 +197,7 @@ main {
 article {
   background-color: black;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 article button {
