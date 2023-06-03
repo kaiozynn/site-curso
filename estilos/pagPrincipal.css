@@ -35,6 +35,21 @@ nav {
   margin: auto;
 }
 
+.offcanvas-body button:nth-child(1):hover {
+  background-color: rgb(217, 217, 217);
+  width: 200px;
+}
+
+.offcanvas-body button:nth-child(2):hover {
+  background-color: rgb(217, 217, 217);
+  width: 200px;
+}
+
+.offcanvas-body button:nth-child(3):hover {
+  background-color: rgb(217, 217, 217);
+  width: 200px;
+}
+
 .offcanvas-body button a {
   color: black;
   text-decoration: none;
@@ -54,6 +69,10 @@ nav {
   background-color: red;
   padding: 6px;
   border-radius: 10px;
+}
+
+.offcanvas-body button a.das:hover {
+  background-color: rgb(206, 2, 2);
 }
 
 .log::after {
@@ -319,6 +338,10 @@ article button > span:nth-child(4){
   border: 2px solid white;
 }
 
+.valores button a:hover {
+  animation: textWave 2s ease-in-out infinite;
+}
+
 .valores > span {
   display: block;
   margin: auto;
@@ -327,13 +350,22 @@ article button > span:nth-child(4){
   color: white;
 }
 
-.valores span:nth-child(1) {
+.valores > span:nth-child(1) {
   font-size: 1.3em;
   font-weight: bold;
 }
 
-.valores span:nth-child(3) {
+.valores > span:nth-child(2) {
+  font-size: 13px;
+}
+
+.valores > span:nth-child(3) {
+  font-size: 19px;
   font-weight: bold;
+}
+
+.valores > span:nth-child(4) {
+  font-size: 14px;
 }
 /*-------------------Animação do brilho do H1 bem vindo!---------------*/
 @keyframes textWave {
